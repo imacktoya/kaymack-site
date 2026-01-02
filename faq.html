@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Kaymack Technologies</title>
+    <meta name="description" content="Frequently asked questions about Kaymack Technologies IT support, websites, and automation services.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: #FAFBF9;
+            color: #1A1E1B;
+            line-height: 1.6;
+        }
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #E4EDE6;
+        }
+        .logo {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.5rem;
+            color: #1A1E1B;
+            text-decoration: none;
+        }
+        .logo span {
+            color: #2E5A3C;
+        }
+        .back-link {
+            color: #2E5A3C;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        h1 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+        .subtitle {
+            color: #4A5650;
+            margin-bottom: 48px;
+            font-size: 1.1rem;
+        }
+        .faq-section {
+            margin-bottom: 48px;
+        }
+        .faq-section h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2E5A3C;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #E4EDE6;
+        }
+        .faq-item {
+            margin-bottom: 16px;
+            border: 1px solid #E4EDE6;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .faq-question {
+            width: 100%;
+            padding: 18px 20px;
+            background: #fff;
+            border: none;
+            text-align: left;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1A1E1B;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'DM Sans', sans-serif;
+        }
+        .faq-question:hover {
+            background: #F0F2ED;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.4rem;
+            color: #2E5A3C;
+            font-weight: 400;
+            transition: transform 0.2s ease;
+        }
+        .faq-item.open .faq-question::after {
+            content: '−';
+        }
+        .faq-answer {
+            display: none;
+            padding: 0 20px 20px;
+            background: #fff;
+            color: #4A5650;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+        .faq-answer a {
+            color: #2E5A3C;
+        }
+        .cta-section {
+            text-align: center;
+            padding: 48px;
+            background: #1A1E1B;
+            border-radius: 16px;
+            margin-top: 48px;
+        }
+        .cta-section h2 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #F0F4F1;
+            margin-bottom: 12px;
+        }
+        .cta-section p {
+            color: #888;
+            margin-bottom: 24px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 14px 32px;
+            background: #2E5A3C;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 100px;
+            transition: background 0.2s ease;
+        }
+        .cta-button:hover {
+            background: #234530;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            color: #4A5650;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: #2E5A3C;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">Kaymack<span>.</span></a>
+        <a href="/" class="back-link">← Back to Home</a>
+    </header>
+    
+    <main>
+        <h1>Frequently Asked Questions</h1>
+        <p class="subtitle">Everything you need to know about working with Kaymack Technologies.</p>
+        
+        <!-- Getting Started -->
+        <section class="faq-section">
+            <h2>Getting Started</h2>
+            
+            <div class="faq-item">
+                <button class="faq-question">What is a Tech Check?</button>
+                <div class="faq-answer">
+                    A Tech Check is a free 30-minute call where we look at your current tech setup, identify what's working and what's not, and figure out if we're a good fit to work together. No sales pitch — just an honest conversation about your needs.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">How do I book a Tech Check?</button>
+                <div class="faq-answer">
+                    You can book a Tech Check directly on our website. Just click the "Book a Tech Check" button and pick a time that works for you. You'll get a confirmation email with all the details.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">What happens after the Tech Check?</button>
+                <div class="faq-answer">
+                    After our call, I'll send you a proposal outlining what I found, what I recommend, and what it'll cost. If it makes sense for both of us, we move forward. If not, no hard feelings.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">How long does setup take?</button>
+                <div class="faq-answer">
+                    It depends on the package. Light setups typically take 1-2 weeks. Standard setups take 2-3 weeks. Full setups with websites and training can take 3-4 weeks. I'll give you a clear timeline in your proposal.
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services -->
+        <section class="faq-section">
+            <h2>Services</h2>
+            
+            <div class="faq-item">
+                <button class="faq-question">What's included in monthly support?</button>
+                <div class="faq-answer">
+                    Monthly support includes ongoing help with your tech — answering questions, troubleshooting issues, maintaining your website, and keeping your automations running. The level of support depends on your plan (Basic, Standard, or Premium).
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">What's the difference between Basic, Standard, and Premium?</button>
+                <div class="faq-answer">
+                    <strong>Basic ($100/mo)</strong> — Email support, 48-hour response, monthly check-in.<br><br>
+                    <strong>Standard ($175/mo)</strong> — Email + text support, 24-hour response, monthly check-in, website maintenance, 1 automation maintained.<br><br>
+                    <strong>Premium ($250/mo)</strong> — Email, text + phone support, same-day response, bi-weekly check-ins, all automations maintained, monthly strategy session.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">Do you build websites?</button>
+                <div class="faq-answer">
+                    Yes. Website builds are included in the Full setup package ($800). I build clean, simple sites that work — not overcomplicated templates that break. If you just need a landing page or updates to an existing site, we can discuss that too.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">Do you build automations?</button>
+                <div class="faq-answer">
+                    Yes. Automations are included in the Standard and Full setup packages. I use tools like Zapier to connect your apps — things like automatically adding new leads to your CRM, sending follow-up emails, or syncing data between tools.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">What tools do you work with?</button>
+                <div class="faq-answer">
+                    I work with most common small business tools — Google Workspace, Microsoft 365, Notion, Calendly, Stripe, Square, Shopify, Zapier, and more. If you use something I haven't worked with before, I'll learn it or let you know upfront.
+                </div>
+            </div>
+        </section>
+        
+        <!-- Billing & Payments -->
+        <section class="faq-section">
+            <h2>Billing & Payments</h2>
+            
+            <div class="faq-item">
+                <button class="faq-question">How much does it cost?</button>
+                <div class="faq-answer">
+                    Setup packages range from $300-$800 (one-time). Monthly support ranges from $100-$250/month. Most clients start with a Standard setup ($500) and Standard monthly plan ($175/mo).
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">Do I need to sign a contract?</button>
+                <div class="faq-answer">
+                    No contracts. Everything is month-to-month. I'd rather earn your business every month than lock you into something you can't get out of.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">How do I pay?</button>
+                <div class="faq-answer">
+                    I accept credit/debit cards and ACH transfers through Stripe. You'll receive a payment link after your proposal is approved.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">When does billing start?</button>
+                <div class="faq-answer">
+                    Setup fees are due before work begins. Monthly billing starts on the 1st of the month after your setup is complete.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">What's your cancellation policy?</button>
+                <div class="faq-answer">
+                    You can cancel anytime with 14 days notice. No penalties, no hard feelings. I'll make sure you have everything you need to transition smoothly.
+                </div>
+            </div>
+        </section>
+        
+        <!-- Support -->
+        <section class="faq-section">
+            <h2>Support</h2>
+            
+            <div class="faq-item">
+                <button class="faq-question">What are your business hours?</button>
+                <div class="faq-answer">
+                    Monday through Friday, 9am to 5pm Central Time. I don't offer 24/7 support — but I do respond within the timeframe promised by your plan.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">How fast will you respond?</button>
+                <div class="faq-answer">
+                    Response times depend on your plan:<br><br>
+                    <strong>Basic</strong> — Within 48 hours<br>
+                    <strong>Standard</strong> — Within 24 hours<br>
+                    <strong>Premium</strong> — Same business day
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">What's the difference between response time and resolution time?</button>
+                <div class="faq-answer">
+                    Response time is how quickly I'll acknowledge your request and start looking into it. Resolution time is how long it takes to actually fix the issue — which depends on complexity. I'll always keep you updated on progress.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">What's NOT included in support?</button>
+                <div class="faq-answer">
+                    Monthly support covers maintenance and troubleshooting — not new builds. If you need a new website, new automations, or major changes, that's a separate project with its own scope and pricing. I'll always be clear about what's included and what's extra.
+                </div>
+            </div>
+        </section>
+        
+        <!-- Working Together -->
+        <section class="faq-section">
+            <h2>Working Together</h2>
+            
+            <div class="faq-item">
+                <button class="faq-question">Do you work with businesses outside of Texas?</button>
+                <div class="faq-answer">
+                    Yes. Most of my work is done remotely, so location doesn't matter. As long as we can get on a call and you have internet, we're good.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">What if I need something outside your scope?</button>
+                <div class="faq-answer">
+                    I'll be honest with you. If it's something I can learn quickly, I'll take it on. If it's outside my wheelhouse, I'll tell you and try to point you in the right direction.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">Can I upgrade or downgrade my plan?</button>
+                <div class="faq-answer">
+                    Yes. You can change your plan at any time. Upgrades take effect immediately. Downgrades take effect at the start of the next billing cycle.
+                </div>
+            </div>
+        </section>
+        
+        <div class="cta-section">
+            <h2>Still have questions?</h2>
+            <p>Book a free Tech Check and let's talk through it.</p>
+            <a href="https://calendly.com/isaac-kaymacktechnologies/30min" class="cta-button">Book a Tech Check</a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2026 Kaymack Technologies. All rights reserved.</p>
+        <p><a href="/">Home</a> · <a href="/terms">Support Terms</a> · <a href="/card">Contact</a></p>
+    </footer>
+    
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                item.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>
