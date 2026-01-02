@@ -1,346 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support Terms | Kaymack Technologies</title>
-    <meta
-      name="description"
-      content="Support terms and service definitions for Kaymack Technologies."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Support terms and service definitions for Kaymack Technologies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <style>
-      :root {
-        --color-bg: #fafbf9;
-        --color-bg-alt: #f0f2ed;
-        --color-text: #1a1e1b;
-        --color-text-muted: #4a5650;
-        --color-accent: #2e5a3c;
-        --color-accent-hover: #234530;
-        --color-accent-light: #e4ede6;
-        --color-border: #d8ded9;
-        --color-warm: #c9956a;
-        --font-display: "Instrument Serif", serif;
-        --font-body: "DM Sans", sans-serif;
-        --radius: 12px;
-      }
-      [data-theme="dark"] {
-        --color-bg: #0f1410;
-        --color-bg-alt: #1a1f1b;
-        --color-text: #f0f4f1;
-        --color-text-muted: #b8c4ba;
-        --color-accent: #6bbf7a;
-        --color-accent-hover: #5aad69;
-        --color-accent-light: #1e3324;
-        --color-border: #2a352c;
-        --color-warm: #d4a574;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        font-family: var(--font-body);
-        font-size: 17px;
-        line-height: 1.7;
-        color: var(--color-text);
-        background-color: var(--color-bg);
-        -webkit-font-smoothing: antialiased;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 28px;
-      }
+        :root {
+            --color-bg: #FAFBF9;
+            --color-bg-alt: #F0F2ED;
+            --color-text: #1A1E1B;
+            --color-text-muted: #4A5650;
+            --color-accent: #2E5A3C;
+            --color-accent-hover: #234530;
+            --color-accent-light: #E4EDE6;
+            --color-border: #D8DED9;
+            --color-warm: #C9956A;
+            --font-display: 'Instrument Serif', serif;
+            --font-body: 'DM Sans', sans-serif;
+            --radius: 12px;
+        }
+        [data-theme="dark"] {
+            --color-bg: #0F1410;
+            --color-bg-alt: #1A1F1B;
+            --color-text: #F0F4F1;
+            --color-text-muted: #B8C4BA;
+            --color-accent: #6BBF7A;
+            --color-accent-hover: #5AAD69;
+            --color-accent-light: #1E3324;
+            --color-border: #2A352C;
+            --color-warm: #D4A574;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-body);
+            font-size: 17px;
+            line-height: 1.7;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 28px; }
+        
+        /* Header */
+        header {
+            padding: 18px 0;
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            background: var(--color-bg);
+            z-index: 100;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .header-inner { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: var(--color-text);
+            text-decoration: none;
+        }
+        .logo span { color: var(--color-accent); }
+        .back-link {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .back-link:hover { text-decoration: underline; }
 
-      /* Header */
-      header {
-        padding: 18px 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: var(--color-bg);
-        z-index: 100;
-        border-bottom: 1px solid var(--color-border);
-      }
-      .header-inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 28px;
-      }
-      .logo {
-        font-family: var(--font-display);
-        font-size: 1.6rem;
-        font-weight: 400;
-        color: var(--color-text);
-        text-decoration: none;
-      }
-      .logo span {
-        color: var(--color-accent);
-      }
-      .back-link {
-        color: var(--color-accent);
-        text-decoration: none;
-        font-size: 0.95rem;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-      }
-      .back-link:hover {
-        text-decoration: underline;
-      }
-
-      /* Content */
-      main {
-        padding: 140px 0 80px;
-      }
-      h1 {
-        font-family: var(--font-display);
-        font-size: 2.5rem;
-        font-weight: 400;
-        margin-bottom: 16px;
-        color: var(--color-text);
-      }
-      .intro {
-        font-size: 1.15rem;
-        color: var(--color-text-muted);
-        margin-bottom: 48px;
-        padding-bottom: 32px;
-        border-bottom: 1px solid var(--color-border);
-      }
-      h2 {
-        font-family: var(--font-display);
-        font-size: 1.5rem;
-        font-weight: 400;
-        margin-top: 48px;
-        margin-bottom: 20px;
-        color: var(--color-text);
-      }
-      h3 {
-        font-family: var(--font-body);
-        font-size: 1rem;
-        font-weight: 600;
-        margin-top: 32px;
-        margin-bottom: 12px;
-        color: var(--color-accent);
-      }
-      p {
-        color: var(--color-text-muted);
-        margin-bottom: 16px;
-      }
-      ul {
-        list-style: none;
-        margin-bottom: 24px;
-      }
-      li {
-        padding: 8px 0;
-        padding-left: 24px;
-        position: relative;
-        color: var(--color-text-muted);
-      }
-      li::before {
-        content: "•";
-        position: absolute;
-        left: 0;
-        color: var(--color-accent);
-        font-weight: bold;
-      }
-      .highlight-box {
-        background: var(--color-accent-light);
-        border-radius: var(--radius);
-        padding: 24px;
-        margin: 32px 0;
-      }
-      .highlight-box p {
-        color: var(--color-text);
-        margin: 0;
-      }
-      .not-included li::before {
-        content: "✕";
-        color: var(--color-warm);
-      }
-
-      /* Footer */
-      footer {
-        padding: 48px 0;
-        border-top: 1px solid var(--color-border);
-        margin-top: 80px;
-      }
-      .footer-inner {
-        text-align: center;
-        color: var(--color-text-muted);
-        font-size: 0.9rem;
-      }
-      .footer-inner a {
-        color: var(--color-accent);
-        text-decoration: none;
-      }
+        /* Content */
+        main {
+            padding: 140px 0 80px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+            color: var(--color-text);
+        }
+        .intro {
+            font-size: 1.15rem;
+            color: var(--color-text-muted);
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--color-border);
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            color: var(--color-text);
+        }
+        h3 {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: var(--color-accent);
+        }
+        p {
+            color: var(--color-text-muted);
+            margin-bottom: 16px;
+        }
+        ul {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+        li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            color: var(--color-text-muted);
+        }
+        li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+        .highlight-box {
+            background: var(--color-accent-light);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin: 32px 0;
+        }
+        .highlight-box p {
+            color: var(--color-text);
+            margin: 0;
+        }
+        .not-included li::before {
+            content: '✕';
+            color: var(--color-warm);
+        }
+        
+        /* Footer */
+        footer {
+            padding: 48px 0;
+            border-top: 1px solid var(--color-border);
+            margin-top: 80px;
+        }
+        .footer-inner {
+            text-align: center;
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+        }
+        .footer-inner a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <div class="header-inner">
-        <a href="index.html" class="logo">Kaymack<span>.</span></a>
-        <a href="index.html#pricing" class="back-link">
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M19 12H5M12 19l-7-7 7-7" />
-          </svg>
-          Back to Pricing
-        </a>
-      </div>
+        <div class="header-inner">
+            <a href="index.html" class="logo">Kaymack<span>.</span></a>
+            <a href="index.html#pricing" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back to Pricing
+            </a>
+        </div>
     </header>
 
     <main>
-      <div class="container">
-        <h1>Support Terms</h1>
-        <p class="intro">
-          Clear expectations make for better partnerships. Here's exactly what's
-          included in our support plans and what falls outside the scope.
-        </p>
+        <div class="container">
+            <h1>Support Terms</h1>
+            <p class="intro">Clear expectations make for better partnerships. Here's exactly what's included in our support plans and what falls outside the scope.</p>
 
-        <h2>General Terms</h2>
+            <h2>General Terms</h2>
+            
+            <h3>Business Hours</h3>
+            <p>Monday through Friday, 9am to 5pm Central Time. We're closed on major US holidays.</p>
 
-        <h3>Business Hours</h3>
-        <p>
-          Monday through Friday, 9am to 5pm Central Time. We're closed on major
-          US holidays.
-        </p>
+            <h3>Response Time vs. Resolution Time</h3>
+            <p>Response time means we've acknowledged your request and started triage. Resolution time depends on the complexity of the issue. Simple fixes may be same-day; complex problems take longer. We'll always keep you updated.</p>
 
-        <h3>Response Time vs. Resolution Time</h3>
-        <p>
-          Response time means we've acknowledged your request and started
-          triage. Resolution time depends on the complexity of the issue. Simple
-          fixes may be same-day; complex problems take longer. We'll always keep
-          you updated.
-        </p>
+            <h3>What's In Scope</h3>
+            <ul>
+                <li>Troubleshooting and guidance</li>
+                <li>Small fixes within your plan</li>
+                <li>Questions about your existing tools and systems</li>
+                <li>Recommendations and advice</li>
+            </ul>
 
-        <h3>What's In Scope</h3>
-        <ul>
-          <li>Troubleshooting and guidance</li>
-          <li>Small fixes within your plan</li>
-          <li>Questions about your existing tools and systems</li>
-          <li>Recommendations and advice</li>
-        </ul>
+            <h3>What's Not Included</h3>
+            <ul class="not-included">
+                <li>New website builds or full redesigns (unless purchased with Full setup)</li>
+                <li>New automation builds (requires a Setup package or separate quote)</li>
+                <li>Migrations, complex networking, or data recovery (quoted separately)</li>
+                <li>Emergency/after-hours incidents (quoted separately)</li>
+                <li>Vendor costs (Google Workspace, domains, hosting, Zapier, Make, etc.)</li>
+            </ul>
 
-        <h3>What's Not Included</h3>
-        <ul class="not-included">
-          <li>
-            New website builds or full redesigns (unless purchased with Full
-            setup)
-          </li>
-          <li>
-            New automation builds (requires a Setup package or separate quote)
-          </li>
-          <li>
-            Migrations, complex networking, or data recovery (quoted separately)
-          </li>
-          <li>Emergency/after-hours incidents (quoted separately)</li>
-          <li>
-            Vendor costs (Google Workspace, domains, hosting, Zapier, Make,
-            etc.)
-          </li>
-        </ul>
+            <h2>Website Maintenance</h2>
+            <p>For plans that include website maintenance, here's what that covers:</p>
 
-        <h2>Website Maintenance</h2>
-        <p>
-          For plans that include website maintenance, here's what that covers:
-        </p>
+            <h3>Included</h3>
+            <ul>
+                <li>Basic updates and upkeep (platform, plugin, theme updates if applicable)</li>
+                <li>Backups and uptime monitoring</li>
+                <li>Small content edits (text, images)</li>
+                <li>Basic form troubleshooting</li>
+            </ul>
 
-        <h3>Included</h3>
-        <ul>
-          <li>
-            Basic updates and upkeep (platform, plugin, theme updates if
-            applicable)
-          </li>
-          <li>Backups and uptime monitoring</li>
-          <li>Small content edits (text, images)</li>
-          <li>Basic form troubleshooting</li>
-        </ul>
+            <h3>Not Included</h3>
+            <ul class="not-included">
+                <li>New pages or sections</li>
+                <li>Redesigns or layout changes</li>
+                <li>Copywriting or content strategy</li>
+                <li>SEO campaigns</li>
+                <li>Custom development or new features</li>
+            </ul>
 
-        <h3>Not Included</h3>
-        <ul class="not-included">
-          <li>New pages or sections</li>
-          <li>Redesigns or layout changes</li>
-          <li>Copywriting or content strategy</li>
-          <li>SEO campaigns</li>
-          <li>Custom development or new features</li>
-        </ul>
+            <h2>Automations</h2>
+            
+            <div class="highlight-box">
+                <p><strong>Build vs. Maintain:</strong> Setup packages are for <em>building</em> automations. Monthly plans are for <em>maintaining</em> them. An automation is a workflow (Zapier, Make, n8n, etc.) that moves information between your tools.</p>
+            </div>
 
-        <h2>Automations</h2>
+            <h3>Maintained Means</h3>
+            <ul>
+                <li>Fixing breaks when something stops working</li>
+                <li>Updating connections when apps change</li>
+                <li>Small logic tweaks to existing workflows</li>
+            </ul>
 
-        <div class="highlight-box">
-          <p>
-            <strong>Build vs. Maintain:</strong> Setup packages are for
-            <em>building</em> automations. Monthly plans are for
-            <em>maintaining</em> them. An automation is a workflow (Zapier,
-            Make, n8n, etc.) that moves information between your tools.
-          </p>
+            <h3>Not Included in Maintenance</h3>
+            <ul class="not-included">
+                <li>Building brand-new automations</li>
+                <li>Major workflow redesigns</li>
+                <li>Adding new tools or integrations to existing workflows</li>
+            </ul>
+
+            <h2>Questions?</h2>
+            <p>If you're unsure whether something is in scope, just ask. We'll always be upfront about what's included and what requires additional work. No surprises.</p>
+
+            <p><a href="https://calendly.com/isaac-kaymacktechnologies/30min">Book a Tech Check</a> to discuss your specific needs.</p>
         </div>
-
-        <h3>Maintained Means</h3>
-        <ul>
-          <li>Fixing breaks when something stops working</li>
-          <li>Updating connections when apps change</li>
-          <li>Small logic tweaks to existing workflows</li>
-        </ul>
-
-        <h3>Not Included in Maintenance</h3>
-        <ul class="not-included">
-          <li>Building brand-new automations</li>
-          <li>Major workflow redesigns</li>
-          <li>Adding new tools or integrations to existing workflows</li>
-        </ul>
-
-        <h2>Questions?</h2>
-        <p>
-          If you're unsure whether something is in scope, just ask. We'll always
-          be upfront about what's included and what requires additional work. No
-          surprises.
-        </p>
-
-        <p>
-          <a href="https://calendly.com/isaac-kaymacktechnologies/30min"
-            >Book a Tech Check</a
-          >
-          to discuss your specific needs.
-        </p>
-      </div>
     </main>
 
     <footer>
-      <div class="container">
-        <div class="footer-inner">
-          <p>
-            © <span id="year"></span> Kaymack Technologies. Austin, TX. |
-            <a href="index.html">Back to Home</a>
-          </p>
+        <div class="container">
+            <div class="footer-inner">
+                <p>© <span id="year"></span> Kaymack Technologies. Austin, TX.</p>
+                <p><a href="/">Home</a> · <a href="/faq">FAQ</a> · <a href="/privacy">Privacy</a> · <a href="/card">Contact</a></p>
+            </div>
         </div>
-      </div>
     </footer>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
 </html>

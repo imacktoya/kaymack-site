@@ -360,8 +360,8 @@
     </main>
     
     <footer>
-        <p>© 2026 Kaymack Technologies. All rights reserved.</p>
-        <p><a href="/">Home</a> · <a href="/terms">Support Terms</a> · <a href="/card">Contact</a></p>
+        <p>© <span id="year"></span> Kaymack Technologies. All rights reserved.</p>
+        <p><a href="/">Home</a> · <a href="/faq">FAQ</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a> · <a href="/card">Contact</a></p>
     </footer>
     
     <script>
@@ -371,6 +371,7 @@
                 item.classList.toggle('open');
             });
         });
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
