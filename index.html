@@ -307,6 +307,44 @@
         </div>
     </section>
 
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Not ready to book a call?</h2>
+                <p>Leave your details and we'll reach out within one business day. No pressure, no spam.</p>
+            </div>
+            <form id="leadForm" class="lead-form" novalidate>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="lf-name">Your name</label>
+                        <input id="lf-name" name="name" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="lf-business">Business name</label>
+                        <input id="lf-business" name="business" type="text" autocomplete="organization">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="lf-email">Email</label>
+                        <input id="lf-email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="lf-phone">Phone <span class="lf-optional">(optional)</span></label>
+                        <input id="lf-phone" name="phone" type="tel" autocomplete="tel">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="lf-message">What do you need help with?</label>
+                    <textarea id="lf-message" name="message" rows="4"></textarea>
+                </div>
+                <input type="text" name="website" class="lf-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <button type="submit" class="btn" id="lf-submit">Send it</button>
+                <p class="lf-status" id="lf-status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="footer-inner">
