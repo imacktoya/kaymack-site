@@ -805,7 +805,7 @@ footer {
    Lead form (#contact)
    =========================== */
 .contact { background: var(--color-bg-alt); border-top: 1px solid var(--color-border); }
-.lead-form { max-width: 640px; margin: 0 auto; }
+.lead-form { max-width: 640px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
 .form-field { margin-bottom: 18px; }
 .form-field label {
@@ -834,8 +834,28 @@ footer {
     box-shadow: 0 0 0 3px var(--color-accent-light);
 }
 .lf-hp { position: absolute; left: -9999px; width: 0; height: 0; opacity: 0; }
-.lead-form .btn { border: none; cursor: pointer; font-family: var(--font-body); }
-.lead-form .btn:disabled { opacity: 0.6; cursor: default; }
+.lead-form .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    background: var(--color-accent);
+    color: white;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 2px solid var(--color-accent);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+[data-theme="dark"] .lead-form .btn { color: var(--color-bg); }
+.lead-form .btn:hover {
+    background: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+}
+.lead-form .btn:disabled { opacity: 0.6; cursor: default; transform: none; }
 .lf-status { margin-top: 14px; font-size: 15px; min-height: 1.5em; }
 .lf-status.success { color: var(--color-accent); font-weight: 600; }
 .lf-status.error { color: #C0392B; }
