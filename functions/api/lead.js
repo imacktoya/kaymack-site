@@ -13,9 +13,18 @@ export async function onRequestPost({ request, env }) {
     const business = clip(b.business, 200);
     const email = clip(b.email, 200);
     const phone = clip(b.phone, 50);
-    const message = clip(b.message, 2000);
+    const message = clip(b.message, 1500);
     if (!name && !email) return json({ error: "name_or_email_required" }, 400);
     if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return json({ error: "invalid_email" }, 400);
+
+    // Attribution captured client-side (main.js): UTMs + referrer. utm_source becomes
+    // part of the CRM's lead source; the rest lands in the first note.
+    const attr = b.attribution && typeof b.attribution === "object" ? b.attribution : {};
+    const utmSource = clip(attr.utm_source, 100);
+    const attrLine = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "referrer", "landing", "page"]
+        .map((k) => (attr[k] ? `${k}=${clip(attr[k], 200)}` : null))
+        .filter(Boolean)
+        .join(" · ");
 
     const r = await fetch(CRM_INTAKE, {
         method: "POST",
@@ -28,8 +37,8 @@ export async function onRequestPost({ request, env }) {
             contact: name || null,
             email: email || null,
             phone: phone || null,
-            source: "Web form",
-            notes: message || null,
+            source: utmSource ? `Web form — ${utmSource}` : "Web form",
+            notes: [message, attrLine && `Attribution: ${attrLine}`].filter(Boolean).join("\n\n") || null,
         }),
     });
     if (!r.ok) return json({ error: "upstream" }, 502);
