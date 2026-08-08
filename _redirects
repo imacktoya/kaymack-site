@@ -1,0 +1,3 @@
+# Tracked short links for partners and campaigns. Each 302s to the homepage with
+# UTMs baked in; main.js captures them, so these leads arrive in the CRM attributed.
+/go/alora /?utm_source=tiktok&utm_medium=influencer&utm_campaign=msalorabanks 302
