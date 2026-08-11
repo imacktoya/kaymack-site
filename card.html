@@ -151,8 +151,9 @@
         </div>
     </div>
     <script>
-        // Build email via JS to bypass Cloudflare email protection
-        var u = 'support';
+        // Build email via JS to bypass Cloudflare email protection.
+        // hello@ feeds the CRM: every email to it becomes an unassigned lead.
+        var u = 'hello';
         var d = 'kaymacktechnologies.com';
         var e = u + '@' + d;
         document.getElementById('email-link').href = 'mailto:' + e;
