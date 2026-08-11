@@ -99,7 +99,7 @@ const getAttr = () => { try { return JSON.parse(sessionStorage.getItem(ATTR_KEY)
 // forwards these into the booking webhook, so booked leads land in the CRM
 // already attributed; clicks are also tracked per placement.
 // ===========================
-document.querySelectorAll('a[href*="calendly.com"]').forEach((a) => {
+document.querySelectorAll('a[href*="calendly.com"], a[href$="/book"], a[href*="/book?"]').forEach((a) => {
     const card = a.closest('.pricing-card');
     const placement =
         (a.classList.contains('header-cta') && 'header') ||
