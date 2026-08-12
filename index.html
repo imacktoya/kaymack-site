@@ -20,10 +20,141 @@
     <meta name="twitter:description" content="IT support, websites, and automation for small businesses. Tech support that actually listens.">
     <meta name="twitter:image" content="https://kaymacktechnologies.com/og-image.png">
     
+    <link rel="canonical" href="https://kaymacktechnologies.com/">
+    <meta property="og:site_name" content="Kaymack Technologies">
+    <meta property="og:locale" content="en_US">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://kaymacktechnologies.com/#business",
+      "name": "Kaymack Technologies",
+      "description": "IT support, websites, and automation for small businesses. Patient, plain-English help from a team that actually listens.",
+      "url": "https://kaymacktechnologies.com/",
+      "logo": "https://kaymacktechnologies.com/favicon.svg",
+      "image": "https://kaymacktechnologies.com/og-image.png",
+      "telephone": "+1-512-522-9096",
+      "email": "hello@kaymacktechnologies.com",
+      "priceRange": "$$",
+      "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Austin",
+            "addressRegion": "TX",
+            "addressCountry": "US"
+      },
+      "areaServed": [
+            {
+                  "@type": "City",
+                  "name": "Austin"
+            },
+            {
+                  "@type": "State",
+                  "name": "Texas"
+            },
+            {
+                  "@type": "Country",
+                  "name": "United States"
+            }
+      ],
+      "openingHoursSpecification": [
+            {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                  ],
+                  "opens": "13:00",
+                  "closes": "21:00"
+            }
+      ],
+      "knowsAbout": [
+            "IT support",
+            "Website design",
+            "Google Workspace",
+            "Business automation",
+            "AI tools"
+      ],
+      "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services",
+            "itemListElement": [
+                  {
+                        "@type": "Offer",
+                        "name": "Basic monthly IT support",
+                        "price": "100",
+                        "priceCurrency": "USD",
+                        "itemOffered": {
+                              "@type": "Service",
+                              "name": "Remote IT Support",
+                              "description": "Email support, 48-hour response, monthly check-in call."
+                        }
+                  },
+                  {
+                        "@type": "Offer",
+                        "name": "Standard monthly IT support",
+                        "price": "175",
+                        "priceCurrency": "USD",
+                        "itemOffered": {
+                              "@type": "Service",
+                              "name": "Remote IT Support",
+                              "description": "Email and text support, 24-hour response, website maintenance, one automation maintained."
+                        }
+                  },
+                  {
+                        "@type": "Offer",
+                        "name": "Premium monthly IT support",
+                        "price": "250",
+                        "priceCurrency": "USD",
+                        "itemOffered": {
+                              "@type": "Service",
+                              "name": "Remote IT Support",
+                              "description": "Email, text and phone support, same-day response, priority handling, monthly strategy session."
+                        }
+                  },
+                  {
+                        "@type": "Offer",
+                        "name": "Light setup",
+                        "price": "400",
+                        "priceCurrency": "USD",
+                        "itemOffered": {
+                              "@type": "Service",
+                              "name": "Website and setup",
+                              "description": "One-time setup project."
+                        }
+                  },
+                  {
+                        "@type": "Offer",
+                        "name": "Standard setup",
+                        "price": "800",
+                        "priceCurrency": "USD",
+                        "itemOffered": {
+                              "@type": "Service",
+                              "name": "Website and setup",
+                              "description": "One-time website build and setup."
+                        }
+                  },
+                  {
+                        "@type": "Offer",
+                        "name": "Full presence setup",
+                        "price": "2000",
+                        "priceCurrency": "USD",
+                        "itemOffered": {
+                              "@type": "Service",
+                              "name": "Website, automation and full setup",
+                              "description": "Complete one-time build: website, email, automation."
+                        }
+                  }
+            ]
+      }
+}
+    </script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -280,7 +411,7 @@
 
             <!-- Definitions -->
             <div class="pricing-definitions">
-                <p><strong>*Definitions:</strong> <em>Maintained</em> = fixing breaks, updating connections, small tweaks (not building new). <em>Website maintenance</em> = updates, backups, uptime checks, small content edits. <a href="terms.html">Full support terms &rarr;</a></p>
+                <p><strong>*Definitions:</strong> <em>Maintained</em> = fixing breaks, updating connections, small tweaks (not building new). <em>Website maintenance</em> = updates, backups, uptime checks, small content edits. <a href="/terms">Full support terms &rarr;</a></p>
             </div>
         </div>
     </section>
@@ -355,7 +486,16 @@
                     <a href="/privacy">Privacy</a>
                     <a href="/card">Contact</a>
                 </div>
-                <div class="footer-copy">&copy; <span id="year"></span> Kaymack Technologies. Austin, TX.</div>
+                <!-- Name, address, phone: kept identical to the Google Business
+                     Profile. Search cross-checks the two, so edit them together. -->
+                <div class="footer-nap">
+                    <a href="tel:+15125229096">(512) 522-9096</a>
+                    <span aria-hidden="true">&middot;</span>
+                    <a href="mailto:hello@kaymacktechnologies.com">hello@kaymacktechnologies.com</a>
+                    <span aria-hidden="true">&middot;</span>
+                    <span>Mon&ndash;Fri, 1pm&ndash;9pm CT</span>
+                </div>
+                <div class="footer-copy">&copy; <span id="year"></span> Kaymack Technologies. Based in Austin, TX, serving the Austin metro. Remote support nationwide.</div>
             </div>
         </div>
     </footer>

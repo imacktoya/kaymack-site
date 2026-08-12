@@ -759,6 +759,21 @@ footer {
     font-size: 0.9rem;
 }
 .footer-links a:hover { color: var(--color-accent); }
+/* Name, address, phone line. Matches the Google Business Profile exactly. */
+.footer-nap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+.footer-nap a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-nap a:hover { color: var(--color-accent); }
 .footer-copy {
     width: 100%;
     text-align: center;
