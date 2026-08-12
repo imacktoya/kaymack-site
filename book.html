@@ -111,7 +111,7 @@
             var base = 'https://calendly.com/isaac-kaymacktechnologies/30min';
             var dark = document.documentElement.getAttribute('data-theme') === 'dark' ||
                 (!document.documentElement.getAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
-            var q = new URLSearchParams({ hide_gdpr_banner: '1' });
+            var q = new URLSearchParams({ hide_gdpr_banner: '1', hide_event_type_details: '1' });
             q.set('primary_color', dark ? '6BBF7A' : '2E5A3C');
             q.set('background_color', dark ? '1A1F1B' : 'F0F2ED');
             q.set('text_color', dark ? 'F0F4F1' : '1A1E1B');
