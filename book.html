@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="book-widget">
-                <div id="calendly-embed" class="calendly-inline-widget" data-resize="true"></div>
+                <div id="calendly-embed" class="calendly-inline-widget" style="min-width:300px;height:760px;"></div>
             </div>
         </div>
     </div>
@@ -118,10 +118,16 @@
             if (!q.get('utm_source')) q.set('utm_source', 'website');
             if (here.get('name')) q.set('name', here.get('name'));
             if (here.get('email')) q.set('email', here.get('email'));
-            document.getElementById('calendly-embed').setAttribute('data-url', base + '?' + q.toString());
+            // widget.js only auto-scans for embeds during initial page load;
+            // loaded late it does nothing, so init the widget explicitly.
+            var url = base + '?' + q.toString();
+            var el = document.getElementById('calendly-embed');
             var s = document.createElement('script');
             s.src = 'https://assets.calendly.com/assets/external/widget.js';
             s.async = true;
+            s.onload = function () {
+                if (window.Calendly) window.Calendly.initInlineWidget({ url: url, parentElement: el });
+            };
             document.body.appendChild(s);
         })();
     </script>
