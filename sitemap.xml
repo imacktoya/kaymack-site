@@ -13,6 +13,26 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://kaymacktechnologies.com/it-support</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kaymacktechnologies.com/websites</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kaymacktechnologies.com/automation-ai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kaymacktechnologies.com/google-workspace</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://kaymacktechnologies.com/faq</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
