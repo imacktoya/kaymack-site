@@ -270,7 +270,7 @@ header.scrolled {
 }
 .problem-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
     gap: 20px;
 }
 .problem-card {
@@ -327,7 +327,7 @@ header.scrolled {
 }
 .approach-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 24px;
 }
 .approach-card {
@@ -368,7 +368,7 @@ header.scrolled {
 .services { background: var(--color-bg-alt); border-top: 1px solid var(--color-border); }
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: 20px;
 }
 .service-card {
@@ -430,7 +430,7 @@ header.scrolled {
 .how-it-works .section-header p { color: rgba(255,255,255,0.7); }
 .steps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 48px;
 }
 .step { position: relative; padding-left: 80px; }
@@ -465,7 +465,7 @@ header.scrolled {
 }
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: 24px;
     margin-bottom: 70px;
 }
@@ -575,7 +575,7 @@ header.scrolled {
    =========================== */
 .paths-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: 24px;
     margin-bottom: 40px;
 }
