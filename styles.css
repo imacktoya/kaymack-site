@@ -39,6 +39,11 @@
    =========================== */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+/* Safety net: nothing may widen the page past the screen. `clip` (not hidden)
+   so no scroll container is created and position: sticky keeps working. The
+   real fixes still matter (this only clips the symptom), but it means one
+   too-wide element can never again shove the whole mobile page sideways. */
+html { overflow-x: clip; }
 body {
     font-family: var(--font-body);
     font-size: 17px;
@@ -750,7 +755,11 @@ footer {
 .footer-contact a:hover { color: var(--color-accent); }
 .footer-links {
     display: flex;
-    gap: 24px;
+    /* Must wrap: this row holds 8 links on the homepage (~600px). Without
+       wrapping it widens the whole page canvas past a phone screen, which is
+       what made mobile zoom-out shove everything left (fixed 2026-08-13). */
+    flex-wrap: wrap;
+    gap: 12px 24px;
     margin-bottom: 16px;
 }
 .footer-links a {
